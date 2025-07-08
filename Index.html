@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AppDeck - One Click App Installer</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #0d6efd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .hero-section {
+      padding: 100px 20px;
+      background: linear-gradient(145deg, #0d6efd, #6610f2);
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-logo {
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      font-size: 1.25rem;
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+    .btn-custom {
+      background: linear-gradient(to right, #00c9a7, #2cc8d6);
+      color: white;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(0, 255, 200, 0.3);
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-custom:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(0, 255, 200, 0.5);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .features-list li {
+      background-color: #1e1e1e;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      transition: transform 0.2s ease;
+      min-height: 120px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h5 {
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .card small {
+      color: #aad3ff;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.95rem;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">
+        <img src="logo.png" alt="AppDeck Logo">
+        AppDeck
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <img src="logo.png" alt="AppDeck Logo" class="hero-logo" />
+      <h1>Install All Your Favorite Apps</h1>
+      <p>Choose from dozens of essential apps and install them all at once with AppDeck. It's fast, simple, and free.</p>
+      <a href="AppDeck.zip" class="btn-custom" download>Download AppDeck</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Why Use AppDeck?</h2>
+      <ul class="features-list list-unstyled">
+        <li>✅ Install multiple apps in one click</li>
+        <li>✅ Modern UI with smooth experience</li>
+        <li>✅ Safe installs using official sources (winget)</li>
+        <li>✅ Save time during fresh OS setup</li>
+        <li>✅ Lightweight & completely free</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- App List Section -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Available Apps</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <h5>Google Chrome</h5>
+            <small>Web Browser</small>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h5>Visual Studio Code</h5>
+            <small>Code Editor</small>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h5>VLC Media Player</h5>
+            <small>Media Player</small>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h5>7-Zip</h5>
+            <small>File Utility</small>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h5>Discord</h5>
+            <small>Voice & Chat</small>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h5>Spotify</h5>
+            <small>Music Streaming</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 AppDeck. Built by Arka.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
